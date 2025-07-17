@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inicio - CeluTech</title>
+  <link rel="stylesheet" href="../CSS/estilos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="../JS/script-carrito.js" defer></script>
+  <script src="../JS/script-carrusel-ads.js" defer></script>
+</head>
+
+<body>
+  <header class="encabezado">
+    <div class="header-container">
+      <h1><i class="fas fa-mobile-alt"></i> CeluTech</h1>
+      <a href="#" class="carrito-icon">
+        <i class="fas fa-shopping-cart"></i>
+      </a>
+    </div>
+    <hr>
+  </header>
+
+  <nav>
+    <div class="menu-desktop">
+      <ul class="lista-nav">
+        <li class="item-nav"><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+        <li class="item-nav"><a href="productos.html"><i class="fas fa-box-open"></i> Productos</a></li>
+        <li class="item-nav"><a href="nosotros.html"><i class="fa-solid fa-user"></i> Nosotros</a></li>
+        <li class="item-nav"><a href="sucursales.html"><i class="fa-solid fa-location-dot"></i> Sucursales</a></li>
+        <li class="item-nav"><a href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+<main>
+  <section class="contenedor-destacados">
+    <h2>INFORMACIÓN DEL PRODUCTO</h2>
+    
+    <div class="detalle-producto-2col">
+
+      <div class="info-especificaciones">
+        <h3>Xiaomi Redmi Note 12</h3>
+        <p><strong>Marca:</strong> Xiaomi</p>
+        <p><strong>Almacenamiento:</strong> 128 GB</p>
+        <p><strong>RAM:</strong> 4 GB</p>
+        <p><strong>Procesador:</strong> Snapdragon 685 Octa-Core</p>
+        <p><strong>Pantalla:</strong> 6.67" AMOLED Full HD+</p>
+        <p><strong>Cámara principal:</strong> Triple 50 MP + 8 MP + 2 MP</p>
+        <p><strong>Cámara frontal:</strong> 13 MP</p>
+        <p><strong>Batería:</strong> 5000 mAh con carga rápida 33W</p>
+        <p><strong>Precio:</strong> S/849</p>
+      </div>
+
+      <div class="producto-lado-derecho">
+        <img src="../IMG/REDMINOTE12.jpg" alt="Frontal Redmi Note 12" class="imagen-principal" />
+        <button class="btn-agregar"
+                data-id="redmi-note-12"
+                data-nombre="Xiaomi Redmi Note 12"
+                data-precio="849"
+                data-imagen="../IMG/REDMINOTE12.jpg">
+          Añadir al carrito
+        </button>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+
+  <footer class="footer">
+    <section class="footer-contenedor">
+      <div class="footer-contacto">
+        <h3 class="footer-titulo">Contáctanos</h3>
+        <ul class="footer-lista">
+          <li class="footer-item"><i class="fas fa-map-marker-alt"></i> C. Esperanza 135, Miraflores</li>
+          <li class="footer-item"><i class="fas fa-phone"></i> 997 845 278</li>
+          <li class="footer-item"><i class="fas fa-envelope"></i> servicioalcliente@celutech.com</li>
+          <li class="footer-item"><i class="fas fa-clock"></i> Lunes a Sábado / 10:00 am - 7:30 pm</li>
+        </ul>
+      </div>
+
+      <div class="footer-enlaces">
+        <h3 class="footer-titulo">Compras con Confianza</h3>
+        <ul class="footer-lista">
+          <li class="footer-item"><a href="#">Nuestra empresa</a></li>
+          <li class="footer-item"><a href="#">Términos y Condiciones</a></li>
+          <li class="footer-item"><a href="#">Libro de Reclamaciones</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-servicios">
+        <h3 class="footer-titulo">Servicios</h3>
+        <ul class="footer-lista">
+          <li class="footer-item"><a href="#">Tarifario de envíos</a></li>
+          <li class="footer-item"><a href="#">Ventas al por mayor</a></li>
+          <li class="footer-item"><a href="#">Promociones</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-redes">
+        <h3 class="footer-titulo">Síguenos</h3>
+        <div class="footer-social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </section>
+    <section class="footer-bottom">
+      <p class="footer-copy">&copy; 2025 CeluTech - Todos los derechos reservados.</p>
+    </section>
+  </footer>
+
+  <div class="modal-carrito">
+    <div class="modal-carrito-header">
+      <h2>Carrito de Compras</h2>
+      <button class="btn-cerrar-carrito" onclick="cerrarCarrito()">×</button>
+    </div>
+    <div class="modal-carrito-contenido">
+      <div class="carrito-vacio">
+        <p>El carrito está vacío</p>
+      </div>
+    </div>
+  </div>
+
+  <a href="https://wa.me/" target="_blank" class="whatsapp-button">
+    <i class="fab fa-whatsapp"></i>
+    <span>Realice su consulta aquí</span>
+  </a>
+</body>
+</html>

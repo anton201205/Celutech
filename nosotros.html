@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nosotros - CeluTech</title>
+    <link rel="stylesheet" href="../CSS/estilos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="encabezado">
+        <div class="header-container">
+            <h1><i class="fas fa-mobile-alt"></i> CeluTech</h1>
+            <a href="#" class="carrito-icon">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+        </div>
+        <hr>
+    </header>
+
+    <nav>
+        <ul class="lista-nav">
+            <li class="item-nav"><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+            <li class="item-nav"><a href="productos.html"><i class="fas fa-box-open"></i> Productos</a></li>
+            <li class="item-nav"><a href="nosotros.html"><i class="fa-solid fa-user"></i> Nosotros</a></li>
+            <li class="item-nav"><a href="sucursales.html"><i class="fa-solid fa-location-dot"></i> Sucursales</a></li>
+            <li class="item-nav"><a href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="descripcion">
+            <h2>¿Quiénes somos?</h2>
+            <p>En <span class="nombre-resaltado">CeluTech</span>, somos una tienda peruana comprometida con ofrecer lo
+                último en tecnología. Nos apasiona conectar a las personas con los mejores dispositivos móviles y
+                accesorios del mercado.</p>
+        </section>
+
+        <section class="video">
+            <h2>Conócenos más</h2>
+            <iframe width="1321" height="743" src="https://www.youtube.com/embed/a_L9yEnYIVQ"
+                title="Las razones para comprar en linea con CELUTECH.STORE" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+
+        <section class="reseñas">
+            <h2>Reseñas de nuestros clientes</h2>
+            <div class="contenedor-reseñas">
+                <div class="tarjeta">
+                    <p>⭐️⭐️⭐️⭐️⭐️</p>
+                    <p>"Excelente servicio y productos originales. Me encantó mi nuevo celular."</p>
+                    <h4>- Andrea Q.</h4>
+                </div>
+                <div class="tarjeta">
+                    <p>⭐️⭐️⭐️⭐️</p>
+                    <p>"Buenos precios y entrega rápida. Recomendados 100%."</p>
+                    <h4>- Jorge M.</h4>
+                </div>
+                <div class="tarjeta">
+                    <p>⭐️⭐️⭐️⭐️⭐️</p>
+                    <p>"Atención muy amable y productos de calidad. ¡Volveré pronto!"</p>
+                    <h4>- Kiara V.</h4>
+                </div>
+            </div>
+        </section>
+    </main>
+
+  <div class="modal-carrito">
+    <div class="modal-carrito-header">
+      <h2>Carrito de Compras</h2>
+      <button class="btn-cerrar-carrito" onclick="cerrarCarrito()">×</button>
+    </div>
+    <div class="modal-carrito-contenido">
+      <div class="carrito-vacio">
+        <p>El carrito está vacío</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+        <section class="footer-contenedor">
+            <div class="footer-col footer-contacto">
+                <h3 class="footer-titulo">Contáctanos</h3>
+                <ul class="footer-lista">
+                    <li class="footer-item"><i class="fas fa-map-marker-alt"></i> C. Esperanza 135, Miraflores</li>
+                    <li class="footer-item"><i class="fas fa-phone"></i> 997 845 278</li>
+                    <li class="footer-item"><i class="fas fa-envelope"></i> servicioalcliente@celutech.com</li>
+                    <li class="footer-item"><i class="fas fa-clock"></i> Lunes a Sábado / 10:00 am - 7:30 pm</li>
+                </ul>
+            </div>
+
+            <div class="footer-col footer-enlaces">
+                <h3 class="footer-titulo">Compras con Confianza</h3>
+                <ul class="footer-lista">
+                    <li class="footer-item"><a href="#">Nuestra empresa</a></li>
+                    <li class="footer-item"><a href="#">Términos y Condiciones</a></li>
+                    <li class="footer-item"><a href="#">Libro de Reclamaciones</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col footer-servicios">
+                <h3 class="footer-titulo">Servicios</h3>
+                <ul class="footer-lista">
+                    <li class="footer-item"><a href="#">Tarifario de envíos</a></li>
+                    <li class="footer-item"><a href="#">Ventas al por mayor</a></li>
+                    <li class="footer-item"><a href="#">Promociones</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col footer-redes">
+                <h3 class="footer-titulo">Síguenos</h3>
+                <div class="footer-social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </section>
+        <section class="footer-bottom">
+            <p class="footer-copy">&copy; 2025 CeluTech - Todos los derechos reservados.</p>
+        </section>
+    </footer>
+
+</body>
+
+</html>

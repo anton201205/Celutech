@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inicio - CeluTech</title>
+  <link rel="stylesheet" href="../CSS/estilos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="../JS/script-carrito.js" defer></script>
+  <script src="../JS/script-carrusel-ads.js" defer></script>
+</head>
+
+<body>
+  <header class="encabezado">
+    <div class="header-container">
+      <h1><i class="fas fa-mobile-alt"></i> CeluTech</h1>
+      <a href="#" class="carrito-icon">
+        <i class="fas fa-shopping-cart"></i>
+      </a>
+    </div>
+    <hr>
+  </header>
+
+  <nav>
+    <div class="menu-desktop">
+      <ul class="lista-nav">
+        <li class="item-nav"><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+        <li class="item-nav"><a href="productos.html"><i class="fas fa-box-open"></i> Productos</a></li>
+        <li class="item-nav"><a href="nosotros.html"><i class="fa-solid fa-user"></i> Nosotros</a></li>
+        <li class="item-nav"><a href="sucursales.html"><i class="fa-solid fa-location-dot"></i> Sucursales</a></li>
+        <li class="item-nav"><a href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="carrusel-contenedor">
+      <article class="carrusel" id="carrusel">
+        <div class="carrusel-item">
+          <img src="../IMG/AD1.jpg" alt="imagen ad1">
+        </div>
+        <div class="carrusel-item">
+          <img src="../IMG/AD2.webp" alt="imagen ad2">
+        </div>
+        <div class="carrusel-item">
+          <img src="../IMG/AD3.webp" alt="imagen ad3">
+        </div>
+        <div class="carrusel-item">
+          <img src="../IMG/AD4.webp" alt="imagen ad4">
+        </div>
+        <div class="carrusel-item">
+          <img src="../IMG/AD5.webp" alt="imagen ad5">
+        </div>
+      </article>
+      <button class="carrusel-boton carrusel-boton-prev" id="prevBtn">⬅</button>
+      <button class="carrusel-boton carrusel-boton-next" id="nextBtn">➡</button>
+      <article class="indicadores-contenido" id="indicadores"></article>
+    </section>
+
+    <section>
+      <h2>Bienvenidos a CeluTech</h2>
+      <p>Explora los mejores productos tecnológicos a los mejores precios.</p>
+    </section>
+
+    <section class="contenedor-destacados">
+      <h2>Productos Destacados</h2>
+      <div class="productos-estructura">
+        <article class="producto">
+          <a href="detalleGAA34.html" class="enlace-producto">
+            <div class="imagen-hover">
+              <img src="../IMG/GALAXYA32.jpg" alt="Samsung Galaxy A34 FRONTAL" class="frontal" />
+              <img src="../IMG/GALAXYA34_2.jpg" alt="Samsung Galaxy A34 POSTERIOR" class="trasera" />
+            </div>
+            <h3>Samsung Galaxy A34</h3>
+            <p>Precio: S/1299</p>
+          </a>
+
+          <button class="btn-agregar" data-id="samsung-a34" data-nombre="Samsung Galaxy A34" data-precio="1299"
+            data-imagen="../IMG/GALAXYA32.jpg">
+            Añadir al carrito
+          </button>
+        </article>
+
+        <article class="producto">
+          <a href="detalleIP16PRO.html" class="enlace-producto">
+            <div class="imagen-hover">
+              <img src="../IMG/IP16PRO.png" alt="Frontal iPhone 16" class="frontal">
+              <img src="../IMG/IP16PRO2.png" alt="Posterior iPhone 16" class="trasera">
+            </div>
+            <h3>iPhone 16 Pro 128GB</h3>
+            <p>Precio: S/5299</p>
+
+          </a>
+
+          <button class="btn-agregar" data-id="iphone-16-pro" data-nombre="iPhone 16 Pro 128GB" data-precio="5299"
+            data-imagen="../IMG/IP16PRO.png">
+            Añadir al carrito
+          </button>
+        </article>
+
+
+        <article class="producto">
+          <a href="detalleXIAREDNT12.html" class="enlace-producto">
+            <div class="imagen-hover">
+              <img src="../IMG/REDMINOTE12.jpg" alt="Frontal RedmiNote12" class="frontal">
+              <img src="../IMG/REDMINOTE12_2.jpg" alt="Posterior RedmiNote12" class="trasera">
+            </div>
+            <h3>Xiaomi Redmi Note 12</h3>
+            <p>Precio: S/999</p>
+
+          </a>
+
+          <button class="btn-agregar" data-id="redmi-note12" data-nombre="Xiaomi Redmi Note 12" data-precio="999"
+            data-imagen="../IMG/REDMINOTE12.jpg">
+            Añadir al carrito
+          </button>
+        </article>
+      </div>
+    </section>
+
+    <section class="contenedor-boton">
+      <a href="productos.html" class="boton">Ver todos los productos</a>
+    </section>
+
+    <section>
+      <h2>Ofertas del mes</h2>
+      <p>¡Aprovecha nuestros descuentos exclusivos por tiempo limitado!</p>
+      <div class="productos-estructura">
+        <article class="producto">
+          <div class="imagen-hover">
+            <img src="../IMG/MOTOROLAG85.jpg" alt="Frontal MotoG85" class="frontal">
+            <img src="../IMG/MOTOROLAG85_2.jpg" alt="Posterior MotoG85" class="trasera">
+          </div>
+          <h3>Motorola G85 5G</h3>
+          <p><span class="precio-anterior">S/1199</span> <span class="precio-oferta">S/999</span></p>
+          <button class="btn-agregar" data-id="motorola-g85" data-nombre="Motorola G85 5G" data-precio="999"
+            data-imagen="../IMG/MOTOROLAG85.jpg">
+            Añadir al carrito
+          </button>
+        </article>
+
+        <article class="producto">
+          <div class="imagen-hover">
+            <img src="../IMG/S24+.jpg" alt="Frontal S24+" class="frontal">
+            <img src="../IMG/S24_2.jpg" alt="Posterior S24+" class="trasera">
+          </div>
+          <h3>Samsung Galaxy S24+</h3>
+          <p><span class="precio-anterior">S/2999</span> <span class="precio-oferta">S/2699</span></p>
+          <button class="btn-agregar" data-id="samsung-s24+" data-nombre="Samsung Galaxy S24+" data-precio="2699"
+            data-imagen="../IMG/S24+.jpg">
+            Añadir al carrito
+          </button>
+        </article>
+
+        <article class="producto">
+          <div class="imagen-hover">
+            <img src="../IMG/HONOR200.jpg" alt="Frontal HONOR200" class="frontal">
+            <img src="../IMG/HONOR200_2.jpg" alt="Posterior HONOR200" class="trasera">
+          </div>
+          <h3>Honor 200</h3>
+          <p><span class="precio-anterior">S/1899</span> <span class="precio-oferta">S/1599</span></p>
+          <button class="btn-agregar" data-id="honor-200" data-nombre="Honor 200" data-precio="1599"
+            data-imagen="../IMG/HONOR200.jpg">
+            Añadir al carrito
+          </button>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <section class="footer-contenedor">
+      <div class="footer-contacto">
+        <h3 class="footer-titulo">Contáctanos</h3>
+        <ul class="footer-lista">
+          <li class="footer-item"><i class="fas fa-map-marker-alt"></i> C. Esperanza 135, Miraflores</li>
+          <li class="footer-item"><i class="fas fa-phone"></i> 997 845 278</li>
+          <li class="footer-item"><i class="fas fa-envelope"></i> servicioalcliente@celutech.com</li>
+          <li class="footer-item"><i class="fas fa-clock"></i> Lunes a Sábado / 10:00 am - 7:30 pm</li>
+        </ul>
+      </div>
+
+      <div class="footer-enlaces">
+        <h3 class="footer-titulo">Compras con Confianza</h3>
+        <ul class="footer-lista">
+          <li class="footer-item"><a href="#">Nuestra empresa</a></li>
+          <li class="footer-item"><a href="#">Términos y Condiciones</a></li>
+          <li class="footer-item"><a href="#">Libro de Reclamaciones</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-servicios">
+        <h3 class="footer-titulo">Servicios</h3>
+        <ul class="footer-lista">
+          <li class="footer-item"><a href="#">Tarifario de envíos</a></li>
+          <li class="footer-item"><a href="#">Ventas al por mayor</a></li>
+          <li class="footer-item"><a href="#">Promociones</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-redes">
+        <h3 class="footer-titulo">Síguenos</h3>
+        <div class="footer-social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </section>
+    <section class="footer-bottom">
+      <p class="footer-copy">&copy; 2025 CeluTech - Todos los derechos reservados.</p>
+    </section>
+  </footer>
+
+  <div class="modal-carrito">
+    <div class="modal-carrito-header">
+      <h2>Carrito de Compras</h2>
+      <button class="btn-cerrar-carrito" onclick="cerrarCarrito()">×</button>
+    </div>
+    <div class="modal-carrito-contenido">
+      <div class="carrito-vacio">
+        <p>El carrito está vacío</p>
+      </div>
+    </div>
+  </div>
+
+  <a href="https://wa.me/" target="_blank" class="whatsapp-button">
+    <i class="fab fa-whatsapp"></i>
+    <span>Realice su consulta aquí</span>
+  </a>
+</body>
+
+</html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Productos - CeluTech</title>
+  <link rel="stylesheet" href="../CSS/estilos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="../JS/script-carrito.js" defer></script>
+  <script src="../JS/script-categorias-productos.js" defer></script>
+</head>
+
+<body>
+  <header class="encabezado">
+    <div class="header-container">
+      <h1><i class="fas fa-mobile-alt"></i> CeluTech</h1>
+      <a href="#" class="carrito-icon">
+        <i class="fas fa-shopping-cart"></i>
+      </a>
+    </div>
+    <hr>
+  </header>
+
+  <nav>
+    <ul class="lista-nav">
+      <li class="item-nav"><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+      <li class="item-nav"><a href="productos.html"><i class="fas fa-box-open"></i> Productos</a></li>
+      <li class="item-nav"><a href="nosotros.html"><i class="fa-solid fa-user"></i> Nosotros</a></li>
+      <li class="item-nav"><a href="sucursales.html"><i class="fa-solid fa-location-dot"></i> Sucursales</a></li>
+      <li class="item-nav"><a href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a></li>
+    </ul>
+  </nav>
+
+  <h2>Productos</h2>
+  <p>Explora nuestra variedad de productos y encuentra justo lo que necesitas.</p>
+  <!--<div class="barra-busqueda">
+    <input type="text" placeholder="Buscar productos..." />
+    <button type="submit">Buscar</button>
+  </div>-->
+
+  <main>
+
+    <!-- Selector de categoría -->
+    <section id="contenedor-categoria" onchange="categorias()">
+      <p>Seleccionar categoría:</p>
+      <select id="selector-categoria">
+        <option value="todos">Todos</option>
+        <option value="celulares">Celulares</option>
+        <option value="accesorios">Accesorios</option>
+      </select>
+    </section>
+
+    <section id="celulares-section">
+      <h2>Celulares</h2>
+      <div class="productos-estructura">
+        <article class="producto">
+          <div class="imagen-hover">
+            <img src="../IMG/MOTOROLAG85.jpg" alt="Frontal MotoG85" class="frontal">
+            <img src="../IMG/MOTOROLAG85_2.jpg" alt="Posterior MotoG85" class="trasera">
+          </div>
+          <h3>Motorola G85 5G</h3>
+          <p><span class="precio-anterior">S/1199</span> <span class="precio-oferta">S/999</span></p>
+          <button class="btn-agregar" 
+                  data-id="motorola-g85" 
+                  data-nombre="Motorola G85 5G" 
+                  data-precio="999" 
+                  data-imagen="../IMG/MOTOROLAG85.jpg">
+            Añadir al carrito
+          </button>
+        </article>
+
+        <article class="producto">
+          <div class="imagen-hover">
+            <img src="../IMG/S24+.jpg" alt="Frontal S24+" class="frontal">
+            <img src="../IMG/S24_2.jpg" alt="Posterior S24+" class="trasera">
+          </div>
+          <h3>Samsung Galaxy S24+</h3>
+          <p><span class="precio-anterior">S/2999</span> <span class="precio-oferta">S/2699</span></p>
+          <button class="btn-agregar" 
+                  data-id="samsung-s24+" 
+                  data-nombre="Samsung Galaxy S24+" 
+                  data-precio="2699" 
+                  data-imagen="../IMG/S24+.jpg">
+            Añadir al carrito
+          </button>
+        </article>
+
+        <article class="producto">
+          <div class="imagen-hover">
+            <img src="../IMG/HONOR200.jpg" alt="Frontal HONOR200" class="frontal">
+            <img src="../IMG/HONOR200_2.jpg" alt="Posterior HONOR200" class="trasera">
+          </div>
+          <h3>Honor 200</h3>
+          <p><span class="precio-anterior">S/1899</span> <span class="precio-oferta">S/1599</span></p>
+          <button class="btn-agregar" 
+                  data-id="honor-200" 
+                  data-nombre="Honor 200" 
+                  data-precio="1599" 
+                  data-imagen="../IMG/HONOR200.jpg">
+            Añadir al carrito
+          </button>
+        </article>
+      </div>
+      <div class="productos-estructura">
+
+        <article class="producto">
+          <div class="imagen-hover">
+            <img src="../IMG/REDMINOTE12.jpg" alt="Frontal RedmiNote12" class="frontal">
+            <img src="../IMG/REDMINOTE12_2.jpg" alt="Posterior RedmiNote12" class="trasera">
+          </div>
+          <h3>Xiaomi Redmi Note 12</h3>
+          <p>Precio: S/999</p>
+          <button class="btn-agregar" 
+                  data-id="redmi-note12" 
+                  data-nombre="Xiaomi Redmi Note 12" 
+                  data-precio="999" 
+                  data-imagen="../IMG/REDMINOTE12.jpg">
+            Añadir al carrito
+          </button>
+        </article>
+
+        <article class="producto">
+          <div class="imagen-hover">
+
+            <img src="../IMG/IP16PRO.png" alt="Frontal iPhone 16" class="frontal">
+            <img src="../IMG/IP16PRO2.png" alt="Posterior iPhone 16" class="trasera">
+          </div>
+          <h3>iPhone 16 Pro 128GB</h3>
+          <p>Precio: S/5299</p>
+          <button class="btn-agregar" 
+                  data-id="iphone-16-pro" 
+                  data-nombre="iPhone 16 Pro 128GB" 
+                  data-precio="5299" 
+                  data-imagen="../IMG/IP16PRO.png">
+            Añadir al carrito
+          </button>
+        </article>
+
+        <article class="producto">
+          <div class="imagen-hover">
+            <img src="../IMG/GALAXYA32.jpg" alt="Samsung Galaxy A34 FRONTAL" class="frontal" />
+            <img src="../IMG/GALAXYA34_2.jpg" alt="Samsung Galaxy A34 POSTERIOR" class="trasera" />
+          </div>
+          <h3>Samsung Galaxy A34</h3>
+          <p>Precio: S/1299</p>
+          <button class="btn-agregar" 
+                  data-id="samsung-a34" 
+                  data-nombre="Samsung Galaxy A34" 
+                  data-precio="1299" 
+                  data-imagen="../IMG/GALAXYA32.jpg">
+            Añadir al carrito
+          </button>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="accesorios-section">
+      <h2>Accesorios</h2>
+      <div class="productos-estructura">
+
+        <article class="producto">
+          <img src="../IMG/AURICULARESBLUETOOH.jpg" alt="Auriculares Bluetooth" />
+          <h3>Auriculares Bluetooth</h3>
+          <p>Precio: S/199</p>
+          <button class="btn-agregar" 
+                  data-id="auriculares-bluetooth" 
+                  data-nombre="Auriculares Bluetooth" 
+                  data-precio="199" 
+                  data-imagen="../IMG/AURICULARESBLUETOOH.jpg">
+            Añadir al carrito
+          </button>
+        </article>
+
+        <article class="producto">
+          <img src="../IMG/FUNDA.jpg" alt="Funda Protectora" />
+          <h3>Funda Protectora</h3>
+          <p>Precio: S/49</p>
+          <button class="btn-agregar" 
+                  data-id="funda-protectora" 
+                  data-nombre="Funda Protectora" 
+                  data-precio="49" 
+                  data-imagen="../IMG/FUNDA.jpg">
+            Añadir al carrito
+          </button>
+        </article>
+
+        <article class="producto">
+          <img src="../IMG/CARGADORPORTATIL.jpg" alt="Cargador Portátil" />
+          <h3>Cargador Portátil</h3>
+          <p>Precio: S/89</p>
+          <button class="btn-agregar" 
+                  data-id="cargador-portatil" 
+                  data-nombre="Cargador Portátil" 
+                  data-precio="89" 
+                  data-imagen="../IMG/CARGADORPORTATIL.jpg">
+            Añadir al carrito
+          </button>
+        </article>
+
+      </div>
+      <div class="productos-estructura">
+
+        <article class="producto">
+          <img src="../IMG/AUDIFONOSJBL.jpg" alt="Auriculares Bluetooth JBL" />
+          <h3>Auriculares Bluetooth JBL</h3>
+          <p>Precio: S/219</p>
+          <button class="btn-agregar" 
+                  data-id="auriculares-jbl" 
+                  data-nombre="Auriculares Bluetooth JBL" 
+                  data-precio="219" 
+                  data-imagen="../IMG/AUDIFONOSJBL.jpg">
+            Añadir al carrito
+          </button>
+        </article>
+
+        <article class="producto">
+          <img src="../IMG/SMARTWATCH.jpg" alt="Smartwatch Samsung Watch 5 Pro" />
+          <div class="info-producto">
+            <h3>Samsung Watch 5 Pro</h3>
+            <br>
+            <p class="precio-producto">Precio: S/499</p>
+            <button class="btn-agregar" 
+                    data-id="samsung-watch5-pro" 
+                    data-nombre="Samsung Watch 5 Pro" 
+                    data-precio="499" 
+                    data-imagen="../IMG/SMARTWATCH.jpg">
+              Añadir al carrito
+            </button>
+          </div>
+        </article>
+
+        <article class="producto">
+          <img src="../IMG/PARLANTEJBL.jpg" alt="Parlante Bluetooth JBL" />
+          <h3>Parlante Bluetooth JBL</h3>
+          <p>Precio: S/299</p>
+          <button class="btn-agregar" 
+                  data-id="parlante-jbl" 
+                  data-nombre="Parlante Bluetooth JBL" 
+                  data-precio="299" 
+                  data-imagen="../IMG/PARLANTEJBL.jpg">
+            Añadir al carrito
+          </button>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <div class="modal-carrito">
+    <div class="modal-carrito-header">
+      <h2>Carrito de Compras</h2>
+      <button class="btn-cerrar-carrito" onclick="cerrarCarrito()">×</button>
+    </div>
+    <div class="modal-carrito-contenido">
+      <div class="carrito-vacio">
+        <p>El carrito está vacío</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <section class="footer-contenedor">
+      <div class="footer-col footer-contacto">
+        <h3 class="footer-titulo">Contáctanos</h3>
+        <ul class="footer-lista">
+          <li class="footer-item"><i class="fas fa-map-marker-alt"></i> C. Esperanza 135, Miraflores</li>
+          <li class="footer-item"><i class="fas fa-phone"></i> 997 845 278</li>
+          <li class="footer-item"><i class="fas fa-envelope"></i> servicioalcliente@celutech.com</li>
+          <li class="footer-item"><i class="fas fa-clock"></i> Lunes a Sábado / 10:00 am - 7:30 pm</li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-enlaces">
+        <h3 class="footer-titulo">Compras con Confianza</h3>
+        <ul class="footer-lista">
+          <li class="footer-item"><a href="#">Nuestra empresa</a></li>
+          <li class="footer-item"><a href="#">Términos y Condiciones</a></li>
+          <li class="footer-item"><a href="#">Libro de Reclamaciones</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-servicios">
+        <h3 class="footer-titulo">Servicios</h3>
+        <ul class="footer-lista">
+          <li class="footer-item"><a href="#">Tarifario de envíos</a></li>
+          <li class="footer-item"><a href="#">Ventas al por mayor</a></li>
+          <li class="footer-item"><a href="#">Promociones</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-redes">
+        <h3 class="footer-titulo">Síguenos</h3>
+        <div class="footer-social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </section>
+    <section class="footer-bottom">
+      <p class="footer-copy">&copy; 2025 CeluTech - Todos los derechos reservados.</p>
+    </section>
+  </footer>
+
+</body>
+
+</html>
